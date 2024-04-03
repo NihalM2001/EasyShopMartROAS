@@ -8,7 +8,7 @@
 .mainContainer {
   height: 100dvh;
   display: grid;
-  grid-template-rows: 13% 2% 85%;
+  grid-template-rows: 11% 4% 85%;
 }
 
 .header {
