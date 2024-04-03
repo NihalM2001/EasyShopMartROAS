@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.body {
+}
+.mainContainer {
+  height: 100dvh;
+  display: grid;
+  grid-template-rows: 10% 5% 85%;
+}
+
+.header {
+  background-color: #fbc20b;
+}
+
+.mainContent {
+  background-color: grey;
+  padding: 5px;
+}
+
+.calculationContainer {
+  background-color: black;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 40% 5% 15% 40%;
+}
+
+.inputCalculated {
+  background-color: lightpink;
+}
+
+.collapseButton {
+  background-color: lightskyblue;
+}
+
+.breakeven {
+  background-color: lightcyan;
+}
+
+.profitLoss {
+  background-color: lightgoldenrodyellow;
+}
