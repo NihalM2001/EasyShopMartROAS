@@ -8,7 +8,7 @@
 .mainContainer {
   height: 100dvh;
   display: grid;
-  grid-template-rows: 10% 5% 85%;
+  grid-template-rows: 13% 2% 85%;
 }
 
 .header {
@@ -28,7 +28,16 @@
 }
 
 .inputCalculated {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.input {
   background-color: lightpink;
+}
+
+.calculated {
+  background-color: black;
 }
 
 .collapseButton {
