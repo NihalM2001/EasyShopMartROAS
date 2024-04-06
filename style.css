@@ -71,10 +71,23 @@ label {
 
 .calculated {
   background-color: lightsalmon;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  justify-items: center;
-  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.c1 > div,
+.c2 > div {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.c1,
+.c2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
 }
 
 .collapseButton {
