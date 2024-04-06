@@ -96,6 +96,19 @@ label {
 
 .breakeven {
   background-color: lightcyan;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.b1,
+.b2,
+.b3,
+.b4,
+.b5 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .profitLoss {
