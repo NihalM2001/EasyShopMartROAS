@@ -14,11 +14,86 @@
       <main class="mainContent">
         <div class="calculationContainer">
           <div class="inputCalculated">
-            <div class="input"></div>
-            <div class="calculated"></div>
+            <div class="input">
+              <div class="section1">
+                <div id="productCost">
+                  <label for="productCost">Product Cost</label>
+                  <input type="text" name="productCost" id="productCost" />
+                </div>
+                <div id="packagingCost">
+                  <label for="packagingCost">Packaging Cost</label>
+                  <input type="text" name="packagingCost" id="packageCost" />
+                </div>
+                <div id="shippingCost">
+                  <label for="shippingCost">Shipping Cost</label>
+                  <input type="text" name="shippingCost" id="shippingCost" />
+                </div>
+              </div>
+              <div class="section2">
+                <div id="productSP">
+                  <label for="productSP">Product SP</label>
+                  <input type="text" name="productSP" id="productSP" />
+                </div>
+                <div id="adSpend">
+                  <label for="adSpend">Per day ad spent</label>
+                  <input type="text" name="adSpend" id="adSpend" />
+                </div>
+                <div id="expectedMargin">
+                  <label for="expectedMargin">Expected Margin</label>
+                  <input
+                    type="text"
+                    name="expectedMargin"
+                    id="expectedMargin"
+                  />
+                </div>
+              </div>
+              <div class="section3">
+                <div id="rto">
+                  <label for="rto">RTO</label>
+                  <input type="text" name="rto" id="rto" />
+                </div>
+                <div id="damagedReturn">
+                  <label for="damagedReturn">Damaged Returns</label>
+                  <input type="text" name="damagedReturn" id="damagedReturn" />
+                </div>
+                <div id="reuseInventory"></div>
+              </div>
+            </div>
+            <div class="calculated">
+              <div class="c1">
+                <label for="costMultiplier"
+                  >SP to Product Cost Multiplier</label
+                >
+                <input type="text" name="costMultiplier" id="costMultiplier" />
+              </div>
+              <div class="c2">
+                <label for="returnShipCost">Return shipping Cost</label>
+                <input type="text" name="returnShipCost" id="returnShipCost" />
+              </div>
+              <div class="c3">
+                <label for="deliveredOrders">% Delivered Orders</label>
+                <input
+                  type="text"
+                  name="deliveredOrders"
+                  id="deliveredOrders"
+                />
+              </div>
+              <div class="c4">
+                <label for="rtoCost">RTO Cost</label>
+                <input type="text" name="rtoCost" id="rtoCost" />
+              </div>
+            </div>
           </div>
           <div class="collapseButton"></div>
-          <div class="breakeven"></div>
+          <div class="breakeven">
+            <div class="b1">
+              <label for="breakevenOrders">Breakeven Orders</label>
+              <input type="text" name="breakevenOrders" id="breakevenOrders" />
+            </div>
+            <div class="b2">
+              <label for=""></label>
+            </div>
+          </div>
           <div class="profitLoss"></div>
         </div>
       </main>

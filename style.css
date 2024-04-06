@@ -34,10 +34,47 @@
 
 .input {
   background-color: lightpink;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 30px; */
+}
+
+.section1,
+.section2,
+.section3 {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: center;
+}
+
+.section1,
+.section2,
+.section3 {
+  gap: 20px;
+}
+
+.section1 > *,
+.section2 > *,
+.section3 > * {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+input,
+label {
+  display: inline;
 }
 
 .calculated {
-  background-color: black;
+  background-color: lightsalmon;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-items: center;
+  align-items: center;
 }
 
 .collapseButton {
