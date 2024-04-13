@@ -83,6 +83,10 @@
   gap: 30px;
 }
 
+#reuseInventoryButton > input {
+  width: 10%;
+}
+
 .calculatedSection {
   border-left: 5px solid white;
 }
@@ -110,6 +114,20 @@
 
 .collapseButton {
   background-color: #f7c448;
+}
+
+.otherCosts {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 50%);
+  align-items: center;
+  justify-content: center;
+}
+
+.otherCosts > * {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .breakevenSection {
