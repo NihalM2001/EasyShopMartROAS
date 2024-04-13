@@ -30,7 +30,7 @@
   /* background-color: black; */
   height: 100%;
   display: grid;
-  grid-template-rows: 40% 5% 15% 40%;
+  grid-template-rows: 40% 5% 20% 15% 20%;
 }
 
 .inputCalculated {
