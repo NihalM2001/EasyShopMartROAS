@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
   margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .body {
+  font-size: 18px;
 }
 .mainContainer {
   height: 100dvh;
@@ -15,13 +17,17 @@
   background-color: #fbc20b;
 }
 
+.nav {
+  background-color: black;
+}
+
 .mainContent {
-  background-color: grey;
-  padding: 5px;
+  background-color: rgb(238, 235, 235);
+  padding: 0px 5px 5px 5px;
 }
 
 .calculationContainer {
-  background-color: black;
+  /* background-color: black; */
   height: 100%;
   display: grid;
   grid-template-rows: 40% 5% 15% 40%;
@@ -32,8 +38,21 @@
   grid-template-columns: 60% 40%;
 }
 
+.inputSection,
+.calculatedSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.inputHeader,
+.calculatedHeader {
+  text-align: center;
+  font-size: 30px;
+}
+
 .input {
-  background-color: lightpink;
+  /* background-color: lightpink; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -64,13 +83,12 @@
   gap: 30px;
 }
 
-input,
-label {
-  display: inline;
+.calculatedSection {
+  border-left: 5px solid white;
 }
 
 .calculated {
-  background-color: lightsalmon;
+  /* background-color: lightsalmon; */
   display: flex;
   justify-content: space-around;
 }
@@ -91,11 +109,22 @@ label {
 }
 
 .collapseButton {
-  background-color: lightskyblue;
+  background-color: #f7c448;
+}
+
+.breakevenSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.breakevenHeader {
+  text-align: center;
+  font-size: 30px;
 }
 
 .breakeven {
-  background-color: lightcyan;
+  /* background-color: lightcyan; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -111,6 +140,66 @@ label {
   justify-content: space-between;
 }
 
-.profitLoss {
-  background-color: lightgoldenrodyellow;
+.profit {
+  height: 100%;
+  display: none;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 33.3%);
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(198, 247, 198);
+}
+
+.profitMessage {
+  grid-area: 1/1/1/3;
+  font-size: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.p1,
+.p2,
+.p3,
+.p4 {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 36%;
+}
+
+.loss {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 33.3%);
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(248, 174, 174);
+}
+
+.lossMessage {
+  grid-area: 1/1/1/3;
+  font-size: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.l1,
+.l2,
+.l3,
+.l4 {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 36%;
+}
+
+input {
+  border-radius: 3px;
+}
+
+input:hover,
+input:focus {
+  scale: 1.1;
+  transition: 200ms;
 }

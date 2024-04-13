@@ -14,112 +14,170 @@
       <main class="mainContent">
         <div class="calculationContainer">
           <div class="inputCalculated">
-            <div class="input">
-              <div class="section1">
-                <div id="productCost">
-                  <label for="productCost">Product Cost</label>
-                  <input type="text" name="productCost" id="productCost" />
+            <div class="inputSection">
+              <div class="inputHeader">Input Values</div>
+              <div class="input">
+
+                <div class="section1">
+                  <div id="productCost">
+                    <label for="productCost">Product Cost</label>
+                    <input type="text" name="productCost" id="productCost" />
+                  </div>
+                  <div id="packagingCost">
+                    <label for="packagingCost">Packaging Cost</label>
+                    <input type="text" name="packagingCost" id="packageCost" />
+                  </div>
+                  <div id="shippingCost">
+                    <label for="shippingCost">Shipping Cost</label>
+                    <input type="text" name="shippingCost" id="shippingCost" />
+                  </div>
                 </div>
-                <div id="packagingCost">
-                  <label for="packagingCost">Packaging Cost</label>
-                  <input type="text" name="packagingCost" id="packageCost" />
+                <div class="section2">
+                  <div id="productSP">
+                    <label for="productSP">Product SP</label>
+                    <input type="text" name="productSP" id="productSP" />
+                  </div>
+                  <div id="adSpend">
+                    <label for="adSpend">Per day ad spent</label>
+                    <input type="text" name="adSpend" id="adSpend" />
+                  </div>
+                  <div id="expectedMargin">
+                    <label for="expectedMargin">Expected Margin</label>
+                    <input
+                      type="text"
+                      name="expectedMargin"
+                      id="expectedMargin"
+                    />
+                  </div>
                 </div>
-                <div id="shippingCost">
-                  <label for="shippingCost">Shipping Cost</label>
-                  <input type="text" name="shippingCost" id="shippingCost" />
+                <div class="section3">
+                  <div id="rto">
+                    <label for="rto">RTO</label>
+                    <input type="text" name="rto" id="rto" />
+                  </div>
+                  <div id="damagedReturn">
+                    <label for="damagedReturn">Damaged Returns</label>
+                    <input type="text" name="damagedReturn" id="damagedReturn" />
+                  </div>
+                  <div id="reuseInventory"></div>
                 </div>
-              </div>
-              <div class="section2">
-                <div id="productSP">
-                  <label for="productSP">Product SP</label>
-                  <input type="text" name="productSP" id="productSP" />
-                </div>
-                <div id="adSpend">
-                  <label for="adSpend">Per day ad spent</label>
-                  <input type="text" name="adSpend" id="adSpend" />
-                </div>
-                <div id="expectedMargin">
-                  <label for="expectedMargin">Expected Margin</label>
-                  <input
-                    type="text"
-                    name="expectedMargin"
-                    id="expectedMargin"
-                  />
-                </div>
-              </div>
-              <div class="section3">
-                <div id="rto">
-                  <label for="rto">RTO</label>
-                  <input type="text" name="rto" id="rto" />
-                </div>
-                <div id="damagedReturn">
-                  <label for="damagedReturn">Damaged Returns</label>
-                  <input type="text" name="damagedReturn" id="damagedReturn" />
-                </div>
-                <div id="reuseInventory"></div>
               </div>
             </div>
-            <div class="calculated">
-              <div class="c1">
-                <div id="costMultiplier">
-                  <label for="costMultiplier"
-                    >SP to Product Cost Multiplier</label
-                  >
-                  <input
-                    type="text"
-                    name="costMultiplier"
-                    id="costMultiplier"
-                  />
+            <div class="calculatedSection">
+              <div class="calculatedHeader">Calculated Values</div>
+              <div class="calculated">
+                <div class="c1">
+                  <div id="costMultiplier">
+                    <label for="costMultiplier"
+                      >SP to Product Cost Multiplier</label
+                    >
+                    <input
+                      type="text"
+                      name="costMultiplier"
+                      id="costMultiplier"
+                    />
+                  </div>
+                  <div id="returnShipCost">
+                    <label for="returnShipCost">Return shipping Cost</label>
+                    <input
+                      type="text"
+                      name="returnShipCost"
+                      id="returnShipCost"
+                    />
+                  </div>
                 </div>
-                <div id="returnShipCost">
-                  <label for="returnShipCost">Return shipping Cost</label>
-                  <input
-                    type="text"
-                    name="returnShipCost"
-                    id="returnShipCost"
-                  />
-                </div>
-              </div>
-              <div class="c2">
-                <div id="deliveredOrderPercent">
-                  <label for="deliveredOrders">% Delivered Orders</label>
-                  <input
-                    type="text"
-                    name="deliveredOrders"
-                    id="deliveredOrders"
-                  />
-                </div>
-                <div id="rtoCost">
-                  <label for="rtoCost">RTO Cost</label>
-                  <input type="text" name="rtoCost" id="rtoCost" />
+                <div class="c2">
+                  <div id="deliveredOrderPercent">
+                    <label for="deliveredOrders">% Delivered Orders</label>
+                    <input
+                      type="text"
+                      name="deliveredOrders"
+                      id="deliveredOrders"
+                    />
+                  </div>
+                  <div id="rtoCost">
+                    <label for="rtoCost">RTO Cost</label>
+                    <input type="text" name="rtoCost" id="rtoCost" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="collapseButton"></div>
-          <div class="breakeven">
-            <div class="b1">
-              <label for="breakevenOrders">Breakeven Orders</label>
-              <input type="text" name="breakevenOrders" id="breakevenOrders" />
-            </div>
-            <div class="b2">
-              <label for="conversionValue">Breakeven Conversion Value</label>
-              <input type="text" name="conversionValue" id="conversionValue" />
-            </div>
-            <div class="b3">
-              <label for="breakevenROAS">Breakeven ROAS</label>
-              <input type="text" name="breakevenROAS" id="breakevenROAS" />
-            </div>
-            <div class="b4">
-              <label for="breakevenCPP">Breakeven CPP</label>
-              <input type="text" name="breakevenCPP" id="breakevenCPP" />
-            </div>
-            <div class="b5">
-              <label for="safeCPP">Safe CPP</label>
-              <input type="text" name="safeCPP" id="safeCPP" />
+          <div class="breakevenSection">
+            <div class="breakevenHeader">Breakeven</div>
+            <div class="breakeven">
+              <div class="b1">
+                <label for="breakevenOrders">Breakeven Orders</label>
+                <input type="text" name="breakevenOrders" id="breakevenOrders" />
+              </div>
+              <div class="b2">
+                <label for="conversionValue">Breakeven Conversion Value</label>
+                <input type="text" name="conversionValue" id="conversionValue" />
+              </div>
+              <div class="b3">
+                <label for="breakevenROAS">Breakeven ROAS</label>
+                <input type="text" name="breakevenROAS" id="breakevenROAS" />
+              </div>
+              <div class="b4">
+                <label for="breakevenCPP">Breakeven CPP</label>
+                <input type="text" name="breakevenCPP" id="breakevenCPP" />
+              </div>
+              <div class="b5">
+                <label for="safeCPP">Safe CPP</label>
+                <input type="text" name="safeCPP" id="safeCPP" />
+              </div>
             </div>
           </div>
-          <div class="profitLoss"></div>
+          <div class="profitLoss">
+            <div class="profit">
+              <div class="profitMessage">Profit Message</div>
+              <div class="p1">
+                <label for="profitableOrder">Profitable Order</label>
+                <input
+                  type="text"
+                  name="profitableOrder"
+                  id="profitableOrder"
+                />
+              </div>
+              <div class="p2">
+                <label for="totalProfit">Total Profit</label>
+                <input type="text" name="totalProfit" id="totalProfit" />
+              </div>
+              <div class="p3">
+                <label for="profitPerOrder">Profit Per Order</label>
+                <input type="text" name="profitPerOrder" id="profitPerOrder" />
+              </div>
+              <div class="p4">
+                <label for="profitPercent">Profit Percent Per Order</label>
+                <input type="text" name="profitPercent" id="profitPercent" />
+              </div>
+            </div>
+            <div class="loss">
+              <div class="lossMessage">Loss Message</div>
+              <div class="l1">
+                <label for="cashFlow">Cash Flow</label>
+                <input
+                  type="text"
+                  name="cashFlow"
+                  id="cashFlow"
+                />
+              </div>
+              <div class="l2">
+                <label for="totalLoss">Total Loss</label>
+                <input type="text" name="totalLoss" id="totalLoss" />
+              </div>
+              <div class="l3">
+                <label for="lossPerOrder">Loss Per Order</label>
+                <input type="text" name="lossPerOrder" id="lossPerOrder" />
+              </div>
+              <div class="l4">
+                <label for="lossPercent">Loss Percent Per Order</label>
+                <input type="text" name="lossPercent" id="lossPercent" />
+              </div>
+            </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
