@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <title>EasyShopMart</title>
   </head>
   <body>
@@ -17,55 +18,55 @@
             <div class="inputSection">
               <div class="inputHeader">Input Values</div>
               <div class="input">
-                <form action="" method="get">
+                <form id="form">
                   <div class="section1">
                     <div id="productCost">
-                      <label for="productCost">Product Cost</label>
-                      <input type="text" name="productCost" id="productCost" />
+                      <label for="productCostInput">Product Cost</label>
+                      <input type="text" name="productCostInput" id="productCostInput" />
                     </div>
                     <div id="packagingCost">
-                      <label for="packagingCost">Packaging Cost</label>
-                      <input type="text" name="packagingCost" id="packageCost" />
+                      <label for="packagingCostInput">Packaging Cost</label>
+                      <input type="text" name="packagingCostInput" id="packagingCostInput" />
                     </div>
                     <div id="shippingCost">
-                      <label for="shippingCost">Shipping Cost</label>
-                      <input type="text" name="shippingCost" id="shippingCost" />
+                      <label for="shippingCostInput">Shipping Cost</label>
+                      <input type="text" name="shippingCostInput" id="shippingCostInput" />
                     </div>
                   </div>
                   <div class="section2">
                     <div id="productSP">
-                      <label for="productSP">Product SP</label>
-                      <input type="text" name="productSP" id="productSP" />
+                      <label for="productSPInput">Product SP</label>
+                      <input type="text" name="productSPInput" id="productSPInput" />
                     </div>
                     <div id="adSpend">
-                      <label for="adSpend">Per day ad spent</label>
-                      <input type="text" name="adSpend" id="adSpend" />
+                      <label for="adSpendInput">Per day ad spent</label>
+                      <input type="text" name="adSpendInput" id="adSpendInput" />
                     </div>
                     <div id="expectedMargin">
-                      <label for="expectedMargin">Expected Margin</label>
+                      <label for="expectedMarginInput">Expected Margin</label>
                       <input
                         type="text"
-                        name="expectedMargin"
-                        id="expectedMargin"
+                        name="expectedMarginInput"
+                        id="expectedMarginInput"
                       />
                     </div>
                   </div>
                   <div class="section3">
                     <div id="rto">
-                      <label for="rto">RTO</label>
-                      <input type="text" name="rto" id="rto" />
+                      <label for="rtoInput">RTO</label>
+                      <input type="text" name="rtoInput" id="rtoInput" />
                     </div>
                     <div id="damagedReturn">
-                      <label for="damagedReturn">Damaged Returns</label>
-                      <input type="text" name="damagedReturn" id="damagedReturn" />
+                      <label for="damagedReturnInput">Damaged Returns</label>
+                      <input type="text" name="damagedReturnInput" id="damagedReturnInput" />
                     </div>
                     <div id="reuseInventoryButton">
-                      <label for="reuseInventory">Reuse Inventory</label>
-                      <input type="range" name="reuseInventory" id="reuseInventory" min="0" max="1" value="0">
+                      <label for="reuseInventoryInput">Reuse Inventory</label>
+                      <input type="range" name="reuseInventoryInput" id="reuseInventoryInput" min="0" max="1" value="0">
                     </div>
                   </div>
                   <div class="submitButton">
-                    <input type="button" value="Submit">
+                    <input type="submit" value="Submit">
                   </div>
                 </form>
               </div>
@@ -75,36 +76,36 @@
               <div class="calculated">
                 <div class="c1">
                   <div id="costMultiplier">
-                    <label for="costMultiplier"
+                    <label for="costMultiplierOutput"
                       >SP to Product Cost Multiplier</label
                     >
                     <input
                       type="text"
-                      name="costMultiplier"
-                      id="costMultiplier"
+                      name="costMultiplierOutput"
+                      id="costMultiplierOutput"
                     />
                   </div>
                   <div id="returnShipCost">
-                    <label for="returnShipCost">Return shipping Cost</label>
+                    <label for="returnShipCostOutput">Return shipping Cost</label>
                     <input
                       type="text"
-                      name="returnShipCost"
-                      id="returnShipCost"
+                      name="returnShipCostOutput"
+                      id="returnShipCostOutput"
                     />
                   </div>
                 </div>
                 <div class="c2">
                   <div id="deliveredOrderPercent">
-                    <label for="deliveredOrders">% Delivered Orders</label>
+                    <label for="deliveredOrdersOutput">% Delivered Orders</label>
                     <input
                       type="text"
-                      name="deliveredOrders"
-                      id="deliveredOrders"
+                      name="deliveredOrdersOutput"
+                      id="deliveredOrdersOutput"
                     />
                   </div>
                   <div id="rtoCost">
-                    <label for="rtoCost">RTO Cost</label>
-                    <input type="text" name="rtoCost" id="rtoCost" />
+                    <label for="rtoCostOutput">RTO Cost</label>
+                    <input type="text" name="rtoCostOutput" id="rtoCostOutput" />
                   </div>
                 </div>
               </div>
