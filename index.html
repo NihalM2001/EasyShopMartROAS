@@ -17,53 +17,57 @@
             <div class="inputSection">
               <div class="inputHeader">Input Values</div>
               <div class="input">
-
-                <div class="section1">
-                  <div id="productCost">
-                    <label for="productCost">Product Cost</label>
-                    <input type="text" name="productCost" id="productCost" />
+                <form action="" method="get">
+                  <div class="section1">
+                    <div id="productCost">
+                      <label for="productCost">Product Cost</label>
+                      <input type="text" name="productCost" id="productCost" />
+                    </div>
+                    <div id="packagingCost">
+                      <label for="packagingCost">Packaging Cost</label>
+                      <input type="text" name="packagingCost" id="packageCost" />
+                    </div>
+                    <div id="shippingCost">
+                      <label for="shippingCost">Shipping Cost</label>
+                      <input type="text" name="shippingCost" id="shippingCost" />
+                    </div>
                   </div>
-                  <div id="packagingCost">
-                    <label for="packagingCost">Packaging Cost</label>
-                    <input type="text" name="packagingCost" id="packageCost" />
+                  <div class="section2">
+                    <div id="productSP">
+                      <label for="productSP">Product SP</label>
+                      <input type="text" name="productSP" id="productSP" />
+                    </div>
+                    <div id="adSpend">
+                      <label for="adSpend">Per day ad spent</label>
+                      <input type="text" name="adSpend" id="adSpend" />
+                    </div>
+                    <div id="expectedMargin">
+                      <label for="expectedMargin">Expected Margin</label>
+                      <input
+                        type="text"
+                        name="expectedMargin"
+                        id="expectedMargin"
+                      />
+                    </div>
                   </div>
-                  <div id="shippingCost">
-                    <label for="shippingCost">Shipping Cost</label>
-                    <input type="text" name="shippingCost" id="shippingCost" />
+                  <div class="section3">
+                    <div id="rto">
+                      <label for="rto">RTO</label>
+                      <input type="text" name="rto" id="rto" />
+                    </div>
+                    <div id="damagedReturn">
+                      <label for="damagedReturn">Damaged Returns</label>
+                      <input type="text" name="damagedReturn" id="damagedReturn" />
+                    </div>
+                    <div id="reuseInventoryButton">
+                      <label for="reuseInventory">Reuse Inventory</label>
+                      <input type="range" name="reuseInventory" id="reuseInventory" min="0" max="1" value="0">
+                    </div>
                   </div>
-                </div>
-                <div class="section2">
-                  <div id="productSP">
-                    <label for="productSP">Product SP</label>
-                    <input type="text" name="productSP" id="productSP" />
+                  <div class="submitButton">
+                    <input type="button" value="Submit">
                   </div>
-                  <div id="adSpend">
-                    <label for="adSpend">Per day ad spent</label>
-                    <input type="text" name="adSpend" id="adSpend" />
-                  </div>
-                  <div id="expectedMargin">
-                    <label for="expectedMargin">Expected Margin</label>
-                    <input
-                      type="text"
-                      name="expectedMargin"
-                      id="expectedMargin"
-                    />
-                  </div>
-                </div>
-                <div class="section3">
-                  <div id="rto">
-                    <label for="rto">RTO</label>
-                    <input type="text" name="rto" id="rto" />
-                  </div>
-                  <div id="damagedReturn">
-                    <label for="damagedReturn">Damaged Returns</label>
-                    <input type="text" name="damagedReturn" id="damagedReturn" />
-                  </div>
-                  <div id="reuseInventoryButton">
-                    <label for="reuseInventory">Reuse Inventory</label>
-                    <input type="range" name="reuseInventory" id="reuseInventory" min="0" max="1" value="0">
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
             <div class="calculatedSection">
