@@ -115,6 +115,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
       var safeCPP = (adSpend / breakevenOrders) * deliOrderPercent;
       console.log("safeCPP " + safeCPP);
+
+      //Profit section
+
+      var profitableOrders = noOfPurchases - breakevenOrders;
+      console.log("profitableOrders " + profitableOrders);
+
+      var totalProfit = profitableOrders * cashFlowAfterDeduction;
+      console.log("totalProfit " + totalProfit);
+
+      var profitPerOrder = totalProfit / noOfPurchases;
+      console.log("profitPerOrder " + profitPerOrder);
+
+      var profitPercentPerOrder = profitPerOrder / productSP;
+      console.log("profitPercentPerOrder " + profitPercentPerOrder);
+
+      //Loss section
+
+      var cashFlowLoss = cashFlowAfterDeduction * noOfPurchases;
+      console.log("cashFlowLoss " + cashFlowLoss);
+
+      var totalLoss = cashFlowLoss - adSpend;
+      console.log("totalLoss " + totalLoss);
+
+      var lossPerOrder = totalLoss / noOfPurchases;
+      console.log("lossPerOrder " + lossPerOrder);
+
+      var totalLossPerOrder = lossPerOrder / productSP;
+      console.log("totalLossPerOrder " + totalLossPerOrder);
     }
   });
 });
