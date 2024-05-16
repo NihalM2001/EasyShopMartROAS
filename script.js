@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("breakevenCPP " + breakevenCPP);
 
       var safeCPP = (adSpend / breakevenOrders) * deliOrderPercent;
-      console.log("breasafeCPPkevenCPP " + safeCPP);
+      console.log("safeCPP " + safeCPP);
     }
   });
 });
