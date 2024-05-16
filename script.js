@@ -8,23 +8,23 @@ document.addEventListener("DOMContentLoaded", function () {
     var productCost = parseInt(
       document.getElementById("productCostInput").value
     );
-    console.log("productCost " + productCost);
+    // console.log("productCost " + productCost);
     var packagingCost = document.getElementById("packagingCostInput").value;
     // console.log(packagingCost);
     var shippingCost = document.getElementById("shippingCostInput").value;
-    console.log("shippingCost " + shippingCost);
+    // console.log("shippingCost " + shippingCost);
     var productSP = document.getElementById("productSPInput").value;
-    // console.log(productSP);
+    // console.log("productSP " + productSP);
     var adSpend = document.getElementById("adSpendInput").value;
     // console.log(adSpend);
     var expectedMargin = document.getElementById("expectedMarginInput").value;
     // console.log(expectedMargin);
     var rto = parseFloat(document.getElementById("rtoInput").value);
-    console.log("rto% " + rto);
+    // console.log("rto% " + rto);
     var damagedReturn = parseFloat(
       document.getElementById("damagedReturnInput").value
     );
-    console.log("damagedReturn " + damagedReturn);
+    // console.log("damagedReturn " + damagedReturn);
     var reuseInventory = document.getElementById("reuseInventoryInput").value;
     // console.log(reuseInventory);
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // console.log(s2pCostMultiplier);
 
     var deliOrderPercent = 100 - (rto + damagedReturn);
-    // console.log(deliOrderPercent);
+    // console.log("deliOrderPercent " + deliOrderPercent);
 
     var returnShippingCost = shippingCost * 0.8;
     // console.log(returnShippingCost);
@@ -54,17 +54,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // console.log(revenueDelivered);
 
     var freightCostRTO = (rto / 100) * rtoCost;
-    console.log("freightCostRTO " + freightCostRTO);
+    // console.log("freightCostRTO " + freightCostRTO);
 
     var freightCostDamaged = (damagedReturn / 100) * shippingCost;
-    console.log("freightCostDamaged " + freightCostDamaged);
+    // console.log("freightCostDamaged " + freightCostDamaged);
 
     var totalFreightCharge =
       parseFloat(shippingCost) +
       parseFloat(freightCostRTO) +
       parseFloat(freightCostDamaged);
 
-    console.log("totalFreightCharge " + totalFreightCharge);
+    // console.log("totalFreightCharge " + totalFreightCharge);
 
     var repackingCharges = () => {
       if (reuseInventory == 0) {
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     };
 
-    console.log("repackingCharges " + repackingCharges());
+    // console.log("repackingCharges " + repackingCharges());
 
     var rtoInventorySavings = () => {
       if (reuseInventory == 0) {
@@ -84,13 +84,37 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     };
 
-    console.log("rtoInventorySavings " + rtoInventorySavings());
+    // console.log("rtoInventorySavings " + rtoInventorySavings());
 
     var totalNonMarketingCost =
       productCost +
       totalFreightCharge -
       rtoInventorySavings() +
       repackingCharges();
-    console.log("totalNonMarketingCost " + totalNonMarketingCost);
+    // console.log("totalNonMarketingCost " + totalNonMarketingCost);
+
+    var cashFlowAfterDeduction = revenueDelivered - totalNonMarketingCost;
+    // console.log("cashFlowAfterDeduction " + cashFlowAfterDeduction);
+
+    //Breakeven section
+
+    if (cashFlowAfterDeduction < 0) {
+      alert("Cash flow is falling below zero");
+    } else {
+      var breakevenOrders = adSpend / cashFlowAfterDeduction;
+      // console.log("breakevenOrders " + breakevenOrders);
+
+      var breakevenConversionValue = breakevenOrders * productSP;
+      // console.log("breakevenConversionValue " + breakevenConversionValue);
+
+      var breakevenROAS = breakevenConversionValue / adSpend;
+      // console.log("breakevenROAS " + breakevenROAS);
+
+      var breakevenCPP = adSpend / breakevenOrders;
+      console.log("breakevenCPP " + breakevenCPP);
+
+      var safeCPP = (adSpend / breakevenOrders) * deliOrderPercent;
+      console.log("breasafeCPPkevenCPP " + safeCPP);
+    }
   });
 });
