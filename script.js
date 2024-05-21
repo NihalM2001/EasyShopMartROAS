@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // console.log("productSP " + productSP);
     var adSpend = document.getElementById("adSpendInput").value;
     // console.log(adSpend);
-    var expectedMargin = document.getElementById("expectedMarginInput").value;
-    // console.log(expectedMargin);
+    var noOfPurchases = document.getElementById("noOfPurchasesInput").value;
+    // console.log(noOfPurchases);
     var rto = parseFloat(document.getElementById("rtoInput").value);
     // console.log("rto% " + rto);
     var damagedReturn = parseFloat(
@@ -111,10 +111,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // console.log("breakevenROAS " + breakevenROAS);
 
       var breakevenCPP = adSpend / breakevenOrders;
-      console.log("breakevenCPP " + breakevenCPP);
+      // console.log("breakevenCPP " + breakevenCPP);
 
       var safeCPP = (adSpend / breakevenOrders) * deliOrderPercent;
-      console.log("safeCPP " + safeCPP);
+      // console.log("safeCPP " + safeCPP);
 
       //Profit section
 
@@ -122,27 +122,27 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("profitableOrders " + profitableOrders);
 
       var totalProfit = profitableOrders * cashFlowAfterDeduction;
-      console.log("totalProfit " + totalProfit);
+      // console.log("totalProfit " + totalProfit);
 
       var profitPerOrder = totalProfit / noOfPurchases;
-      console.log("profitPerOrder " + profitPerOrder);
+      // console.log("profitPerOrder " + profitPerOrder);
 
       var profitPercentPerOrder = profitPerOrder / productSP;
-      console.log("profitPercentPerOrder " + profitPercentPerOrder);
+      // console.log("profitPercentPerOrder " + profitPercentPerOrder);
 
       //Loss section
 
       var cashFlowLoss = cashFlowAfterDeduction * noOfPurchases;
-      console.log("cashFlowLoss " + cashFlowLoss);
+      // console.log("cashFlowLoss " + cashFlowLoss);
 
       var totalLoss = cashFlowLoss - adSpend;
-      console.log("totalLoss " + totalLoss);
+      // console.log("totalLoss " + totalLoss);
 
       var lossPerOrder = totalLoss / noOfPurchases;
-      console.log("lossPerOrder " + lossPerOrder);
+      // console.log("lossPerOrder " + lossPerOrder);
 
       var totalLossPerOrder = lossPerOrder / productSP;
-      console.log("totalLossPerOrder " + totalLossPerOrder);
+      // console.log("totalLossPerOrder " + totalLossPerOrder);
     }
   });
 });
