@@ -145,6 +145,73 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("totalLossPerOrder " + totalLossPerOrder.toFixed(2));
     }
 
+    //calling all the input fields
+
+    // Calculated Values section
+    var s2pCostMultiplierField = document.getElementById(
+      "costMultiplierOutput"
+    );
+
+    var returnShipCostField = document.getElementById("returnShipCostOutput");
+
+    var deliveredOrderPercentField = document.getElementById(
+      "deliveredOrdersOutput"
+    );
+
+    var rtoCostOutputField = document.getElementById("rtoCostOutput");
+
+    // Other values section
+    var revenueDeliveredField = document.getElementById("revenueDelivered");
+
+    var rtoFreightCostField = document.getElementById("rtoFreightCost");
+
+    var damagedFreightCostField = document.getElementById("damagedFreightCost");
+
+    var totalFreightChargeField = document.getElementById("totalFreightCharge");
+
+    var repackingChargeField = document.getElementById("repackingCharge");
+
+    var reusesRtoSavingsField = document.getElementById("reusesRtoSavings");
+
+    var totalNonMarketingCostField = document.getElementById(
+      "totalNonMarketingCost"
+    );
+
+    var cashFlowAfterDeductionField = document.getElementById(
+      "cashFlowAfterDeduction"
+    );
+
+    // fields from breakeven Section
+
+    var breakevenOrdersField = document.getElementById("breakevenOrders");
+
+    var conversionValueField = document.getElementById("conversionValue");
+
+    var breakevenCPPField = document.getElementById("breakevenCPP");
+
+    var safeCPPField = document.getElementById("safeCPP");
+
+    //fields for Loss section
+
+    var cashFlowField = document.getElementById("cashFlow");
+
+    var totalLossField = document.getElementById("totalLoss");
+
+    var lossPerOrderField = document.getElementById("lossPerOrder");
+
+    var lossPercentField = document.getElementById("lossPercent");
+
+    //fields for Profit section
+
+    var profitableOrderField = document.getElementById("profitableOrder");
+    var totalProfitField = document.getElementById("totalProfit");
+
+    var profitPerOrderField = document.getElementById("profitPerOrder");
+
+    var profitPercentField = document.getElementById("profitPercent");
+
     // displaying all the values
+
+    s2pCostMultiplierField.value = s2pCostMultiplier;
   });
 });
