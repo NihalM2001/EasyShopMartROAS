@@ -119,30 +119,32 @@ document.addEventListener("DOMContentLoaded", function () {
       //Profit section
 
       var profitableOrders = noOfPurchases - breakevenOrders;
-      console.log("profitableOrders " + profitableOrders);
+      // console.log("profitableOrders " + profitableOrders);
 
       var totalProfit = profitableOrders * cashFlowAfterDeduction;
       // console.log("totalProfit " + totalProfit);
 
       var profitPerOrder = totalProfit / noOfPurchases;
-      // console.log("profitPerOrder " + profitPerOrder);
+      // console.log("profitPerOrder " + profitPerOrder.toFixed(2));
 
       var profitPercentPerOrder = profitPerOrder / productSP;
-      // console.log("profitPercentPerOrder " + profitPercentPerOrder);
+      // console.log("profitPercentPerOrder " + profitPercentPerOrder.toFixed(2));
 
       //Loss section
 
       var cashFlowLoss = cashFlowAfterDeduction * noOfPurchases;
-      // console.log("cashFlowLoss " + cashFlowLoss);
+      console.log("cashFlowLoss " + cashFlowLoss);
 
       var totalLoss = cashFlowLoss - adSpend;
-      // console.log("totalLoss " + totalLoss);
+      console.log("totalLoss " + totalLoss);
 
       var lossPerOrder = totalLoss / noOfPurchases;
-      // console.log("lossPerOrder " + lossPerOrder);
+      console.log("lossPerOrder " + lossPerOrder);
 
-      var totalLossPerOrder = lossPerOrder / productSP;
-      // console.log("totalLossPerOrder " + totalLossPerOrder);
+      var totalLossPerOrder = (lossPerOrder / productSP) * 100;
+      console.log("totalLossPerOrder " + totalLossPerOrder.toFixed(2));
     }
+
+    // displaying all the values
   });
 });
