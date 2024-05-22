@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Tahoma, sans-serif;
 }
 
 .body {
@@ -15,6 +15,13 @@
 
 .header {
   background-color: #fbc20b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 3rem;
 }
 
 .nav {
@@ -192,7 +199,7 @@ form {
 
 .loss {
   height: 100%;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(3, 33.3%);
   align-items: center;
