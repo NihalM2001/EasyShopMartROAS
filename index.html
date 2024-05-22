@@ -12,7 +12,7 @@
     <div class="mainContainer">
       <header class="header">
         <div class="heading">
-          <span>EasyShop Mart</span>
+          <span>EasyShop Mart ROAS</span>
         </div>
       </header>
       <nav class="nav"></nav>
@@ -81,36 +81,23 @@
               <div class="calculated">
                 <div class="c1">
                   <div id="costMultiplier">
-                    <label for="costMultiplierOutput"
-                      >SP to Product Cost Multiplier</label
-                    >
-                    <input
-                      type="text"
-                      name="costMultiplierOutput"
-                      id="costMultiplierOutput"
-                    />
+                    <label for="costMultiplierOutput">SP to Product Cost Multiplier</label>
+                    <input type="text" name="costMultiplierOutput" id="costMultiplierOutput" readonly/>
+
                   </div>
                   <div id="returnShipCost">
                     <label for="returnShipCostOutput">Return shipping Cost</label>
-                    <input
-                      type="text"
-                      name="returnShipCostOutput"
-                      id="returnShipCostOutput"
-                    />
+                    <input type="text" name="returnShipCostOutput" id="returnShipCostOutput" readonly/>
                   </div>
                 </div>
                 <div class="c2">
                   <div id="deliveredOrderPercent">
                     <label for="deliveredOrdersOutput">% Delivered Orders</label>
-                    <input
-                      type="text"
-                      name="deliveredOrdersOutput"
-                      id="deliveredOrdersOutput"
-                    />
+                    <input type="text" name="deliveredOrdersOutput" id="deliveredOrdersOutput" readonly />
                   </div>
                   <div id="rtoCost">
                     <label for="rtoCostOutput">RTO Cost</label>
-                    <input type="text" name="rtoCostOutput" id="rtoCostOutput" />
+                    <input type="text" name="rtoCostOutput" id="rtoCostOutput" readonly/>
                   </div>
                 </div>
               </div>
@@ -120,35 +107,35 @@
           <div class="otherCosts">
             <div class="oc1">
               <label for="revenueDelivered">Revenue Delivered</label>
-              <input type="text" name="revenueDelivered" id="revenueDelivered">
+              <input type="text" name="revenueDelivered" id="revenueDelivered" readonly>
             </div>
             <div class="oc2">
               <label for="rtoFreightCost">Freight Costs(RTO)</label>
-              <input type="text" name="rtoFreightCost" id="rtoFreightCost">
+              <input type="text" name="rtoFreightCost" id="rtoFreightCost" readonly>
             </div>
             <div class="oc3">
               <label for="damagedFreightCost">Freight Cost(Damaged)</label>
-              <input type="text" name="damagedFreightCost" id="damagedFreightCost">
+              <input type="text" name="damagedFreightCost" id="damagedFreightCost" readonly>
             </div>
             <div class="oc4">
               <label for="totalFreightCharge">Total Freight Charges</label>
-              <input type="text" name="totalFreightCharge" id="totalFreightCharge">
+              <input type="text" name="totalFreightCharge" id="totalFreightCharge" readonly>
             </div>
             <div class="oc5">
               <label for="repackingCharge">Repacking Charges</label>
-              <input type="text" name="repackingCharge" id="repackingCharge">
+              <input type="text" name="repackingCharge" id="repackingCharge" readonly>
             </div>
             <div class="oc6">
               <label for="reusesRtoSavings">Reuse RTO Inventory Savings</label>
-              <input type="text" name="reusesRtoSavings" id="reusesRtoSavings">
+              <input type="text" name="reusesRtoSavings" id="reusesRtoSavings" readonly>
             </div>
             <div class="oc7">
               <label for="totalNonMarketingCost">Total Non-Marketing cost incurred</label>
-              <input type="text" name="totalNonMarketingCost" id="totalNonMarketingCost">
+              <input type="text" name="totalNonMarketingCost" id="totalNonMarketingCost" readonly>
             </div>
             <div class="oc8">
               <label for="cashFlowAfterDeduction">Cash Flow after deductions</label>
-              <input type="tel" name="cashFlowAfterDeduction" id="cashFlowAfterDeduction">
+              <input type="tel" name="cashFlowAfterDeduction" id="cashFlowAfterDeduction" readonly>
             </div>
           </div>
           <div class="breakevenSection">
@@ -156,23 +143,23 @@
             <div class="breakeven">
               <div class="b1">
                 <label for="breakevenOrders">Breakeven Orders</label>
-                <input type="text" name="breakevenOrders" id="breakevenOrders" />
+                <input type="text" name="breakevenOrders" id="breakevenOrders" readonly/>
               </div>
               <div class="b2">
                 <label for="conversionValue">Breakeven Conversion Value</label>
-                <input type="text" name="conversionValue" id="conversionValue" />
+                <input type="text" name="conversionValue" id="conversionValue" readonly/>
               </div>
               <div class="b3">
                 <label for="breakevenROAS">Breakeven ROAS</label>
-                <input type="text" name="breakevenROAS" id="breakevenROAS" />
+                <input type="text" name="breakevenROAS" id="breakevenROAS" readonly/>
               </div>
               <div class="b4">
                 <label for="breakevenCPP">Breakeven CPP</label>
-                <input type="text" name="breakevenCPP" id="breakevenCPP" />
+                <input type="text" name="breakevenCPP" id="breakevenCPP" readonly/>
               </div>
               <div class="b5">
                 <label for="safeCPP">Safe CPP</label>
-                <input type="text" name="safeCPP" id="safeCPP" />
+                <input type="text" name="safeCPP" id="safeCPP" readonly/>
               </div>
             </div>
           </div>
@@ -189,15 +176,15 @@
               </div>
               <div class="p2">
                 <label for="totalProfit">Total Profit</label>
-                <input type="text" name="totalProfit" id="totalProfit" />
+                <input type="text" name="totalProfit" id="totalProfit" readonly/>
               </div>
               <div class="p3">
                 <label for="profitPerOrder">Profit Per Order</label>
-                <input type="text" name="profitPerOrder" id="profitPerOrder" />
+                <input type="text" name="profitPerOrder" id="profitPerOrder" readonly/>
               </div>
               <div class="p4">
                 <label for="profitPercent">Profit Percent Per Order</label>
-                <input type="text" name="profitPercent" id="profitPercent" />
+                <input type="text" name="profitPercent" id="profitPercent" readonly/>
               </div>
             </div>
             <div class="loss">
@@ -205,22 +192,19 @@
               <div class="l1">
                 <label for="cashFlow">Cash Flow</label>
                 <input
-                  type="text"
-                  name="cashFlow"
-                  id="cashFlow"
-                />
+                  type="text" name="cashFlow" id="cashFlow" readonly/>
               </div>
               <div class="l2">
                 <label for="totalLoss">Total Loss</label>
-                <input type="text" name="totalLoss" id="totalLoss" />
+                <input type="text" name="totalLoss" id="totalLoss" readonly/>
               </div>
               <div class="l3">
                 <label for="lossPerOrder">Loss Per Order</label>
-                <input type="text" name="lossPerOrder" id="lossPerOrder" />
+                <input type="text" name="lossPerOrder" id="lossPerOrder" readonly/>
               </div>
               <div class="l4">
                 <label for="lossPercent">Loss Percent Per Order</label>
-                <input type="text" name="lossPercent" id="lossPercent" />
+                <input type="text" name="lossPercent" id="lossPercent" readonly/>
               </div>
             </div>
             </div>
