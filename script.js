@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // console.log(rtoCost);
 
     /*
-    
+    other values section
     */
 
     var revenueDelivered = productSP * (deliOrderPercent / 100);
@@ -187,6 +187,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var conversionValueField = document.getElementById("conversionValue");
 
+    var breakevenROASField = document.getElementById("breakevenROAS");
+
     var breakevenCPPField = document.getElementById("breakevenCPP");
 
     var safeCPPField = document.getElementById("safeCPP");
@@ -204,14 +206,90 @@ document.addEventListener("DOMContentLoaded", function () {
     //fields for Profit section
 
     var profitableOrderField = document.getElementById("profitableOrder");
+
     var totalProfitField = document.getElementById("totalProfit");
 
     var profitPerOrderField = document.getElementById("profitPerOrder");
 
     var profitPercentField = document.getElementById("profitPercent");
 
+    //calling the progit and loss section
+
+    profitSection = document.querySelector(".profit");
+
+    lossSection = document.querySelector(".loss");
+
     // displaying all the values
 
+    // calculated values section
     s2pCostMultiplierField.value = s2pCostMultiplier;
+
+    returnShipCostField.value = returnShippingCost;
+
+    deliveredOrderPercentField.value = deliOrderPercent;
+
+    rtoCostOutputField.value = rtoCost;
+
+    //other values section
+
+    revenueDeliveredField.value = revenueDelivered;
+
+    rtoFreightCostField.value = freightCostRTO;
+
+    damagedFreightCostField.value = freightCostDamaged;
+
+    totalFreightChargeField.value = totalFreightCharge;
+
+    repackingChargeField.value = repackingCharges();
+
+    reusesRtoSavingsField.value = rtoInventorySavings();
+
+    totalNonMarketingCostField.value = totalNonMarketingCost;
+
+    cashFlowAfterDeductionField.value = cashFlowAfterDeduction;
+
+    // breakeven section
+
+    if (cashFlowAfterDeduction > 0) {
+      breakevenOrdersField.value = breakevenOrders;
+
+      conversionValueField.value = breakevenConversionValue;
+
+      breakevenROASField.value = breakevenROAS;
+
+      breakevenCPPField.value = breakevenCPP;
+
+      safeCPPField.value = safeCPP;
+
+      if (noOfPurchases > breakevenOrders) {
+        //setting display to grid of profitSection to display profit
+        profitSection.style.display = "grid";
+        lossSection.style.display = "none";
+        lossSection.style.transition = "100ms";
+
+        profitableOrderField.value = profitableOrders;
+
+        totalProfitField.value = totalProfit;
+
+        profitPerOrderField.value = profitPerOrder.toFixed(2);
+
+        profitPercentField.value = profitPercentPerOrder.toFixed(2);
+      }
+
+      if (noOfPurchases < breakevenOrders) {
+        //setting display to grid of profitSection to display profit
+        lossSection.style.display = "grid";
+        profitSection.style.display = "none";
+        lossSection.style.transition = "100ms";
+
+        cashFlowField.value = cashFlowLoss;
+
+        totalLossField.value = totalLoss;
+
+        lossPerOrderField.value = lossPerOrder;
+
+        lossPercentField.value = totalLossPerOrder.toFixed(2);
+      }
+    }
   });
 });
